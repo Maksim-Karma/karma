@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maksim-K</title>
+    <title>Maksim Kokh</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <style>
         body {
@@ -46,19 +46,34 @@
             margin: 2px 0;
             font-size: 1em;
         }
+        .profile dd {
+            margin: 2px 0;
+            font-size: 1em;
+        }
         .semi-transparent {
             opacity: 0.5; /* Значение прозрачности можно изменять от 0 (полностью прозрачно) до 1 (полностью непрозрачно) */
         }
         .links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px 0;
+        display: flex;
+        justify-content: center;  /* Центрируем все ссылки */
+        flex-wrap: wrap; /* Позволяем ссылкам переноситься на новую строку при нехватке места */
+        max-width: 800px; /* Устанавливаем максимальную ширину контейнера */
+        margin: 0 auto;  /* Центрируем контейнер по горизонтали */
         }
+        
         .links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px; /* Отступы между ссылками */
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        }
+        .links b {
             color: #fff;
             text-decoration: none;
             margin: 20px 10px;
+            margin-top: 100px;
             font-size: 1.1em;
             display: flex;
             align-items: center;
@@ -85,9 +100,10 @@
 
 <div class="profile">
     <img src="avat.png" alt="Profile Picture">
-    <h1>AnotherOneSaturn <span class="semi-transparent">Maks Kokh</span></h1>
+    <h1>Maksim Karma</h1>
     <p>15 y.o. </p>
     <d><span class="semi-transparent"><tt>he's\him</tt></d>
+    <dd><span class="semi-transparent"><tt>Maksim Kokh</tt></dd>
 </div>
 
 <div class="links">
@@ -95,9 +111,11 @@
     <a href="https://t.me/Another1oneblog"><img src="tglogo.png" alt="Telegram logo"><tt>Tg channel</tt></a>
     <a href="https://open.spotify.com/playlist/6KsevlguzEGptM36iRQpUV?si=eb30227052fa4117"><img src="spotifyLogo.png" alt="Spotify logo"><tt>Spotify</tt></a>
     <a href="https://github.com/mks-kkh"><img src="githublogo.png" alt="github logo"><tt>Github page</tt></a>
-    <a href="https://imgur.com/user/Diskreee/posts"><img src="imguricon.png" alt="imgur icon"><tt>Imgur page (gif storage)</tt></a>
+    <a href="https://imgur.com/user/Diskreee/posts"><img src="imguricon.png" alt="imgur icon"><tt>Imgur (gif storage)</tt></a>
     <a href="https://nohello.net/ru/"><img src="nohello1_negate.png" alt="nohello logo"><tt>No hello</tt></a>
+
 </div>
+
 
 <footer>   
     &copy; <tt>2024 Maksim Karma. That's All.</tt>
