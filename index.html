@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,23 +8,36 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
             margin: 0;
             padding: 0;
         }
+
+        /* Контейнер для применения размытия */
+        .blur-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px); /* Применение размытия */
+            z-index: -1; /* Чтобы задний фон был позади всего контента */
+        }
+
         .header {
             position: relative;
             height: 200px;
-            background-image: url('as.gif');
-            background-size: cover;
-            background-position: center;
+            background-color: rgba(0, 0, 0, 0); /* Полностью прозрачный фон */
         }
+
         .profile {
             text-align: center;
             padding: 20px;
             position: relative;
         }
+
         .profile img {
             border-radius: 50%;
             width: 100px;
@@ -33,68 +45,66 @@
             margin-top: -50px;
             border: 3px solid #121212;
         }
+
         .profile h1 {
             margin: 10px 0 5px;
             font-size: 1.5em;
         }
+
         .profile p {
             margin: 5px 0;
             font-size: 1.2em;
         }
-         
+
         .profile d {
             margin: 2px 0;
             font-size: 1em;
         }
+
         .profile dd {
             margin: 2px 0;
             font-size: 1em;
         }
+
         .semi-transparent {
-            opacity: 0.5; /* Значение прозрачности можно изменять от 0 (полностью прозрачно) до 1 (полностью непрозрачно) */
+            opacity: 0.5;
         }
+
         .links {
-        display: flex;
-        justify-content: center;  /* Центрируем все ссылки */
-        flex-wrap: wrap; /* Позволяем ссылкам переноситься на новую строку при нехватке места */
-        max-width: 800px; /* Устанавливаем максимальную ширину контейнера */
-        margin: 0 auto;  /* Центрируем контейнер по горизонтали */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        
+
         .links a {
-        color: #fff;
-        text-decoration: none;
-        margin: 10px; /* Отступы между ссылками */
-        font-size: 1.1em;
-        display: flex;
-        align-items: center;
-        }
-        .links b {
             color: #fff;
             text-decoration: none;
-            margin: 20px 10px;
-            margin-top: 100px;
+            margin: 10px;
             font-size: 1.1em;
             display: flex;
             align-items: center;
         }
-        .links a:hover {
-            text-decoration: underline;
-        }
+
         .links img {
             margin-right: 8px;
             width: 24px;
             height: 24px;
         }
+
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1c1c1c;
-            margin-top: 400px
+            background-color: rgba(0, 0, 0, 0);
+            margin-top: 400px;
         }
     </style>
 </head>
 <body>
+
+<!-- Размытие заднего фона -->
+<div class="blur-background"></div>
 
 <div class="header"></div>
 
@@ -113,17 +123,11 @@
     <a href="https://github.com/mks-kkh"><img src="githublogo.png" alt="github logo"><tt>Github page</tt></a>
     <a href="https://imgur.com/user/Diskreee/posts"><img src="imguricon.png" alt="imgur icon"><tt>Imgur (gif storage)</tt></a>
     <a href="https://nohello.net/ru/"><img src="nohello1_negate.png" alt="nohello logo"><tt>No hello</tt></a>
-    
-
 </div>
 
-
-<footer>   
+<footer>
     &copy; <tt>2024 Maksim Karma.</tt>
 </footer>
 
-
 </body>
 </html>
-
-
