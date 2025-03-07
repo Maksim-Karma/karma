@@ -8,28 +8,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-          /*   background: url('backgrond.png') no-repeat center center fixed; */
-          /*  background-size: cover; */
-            color: #141517;
+            background-color: rgb(37, 37, 37); /* Серый фон */
+            color: #ffffff;
             margin: 0;
             padding: 0;
-        }
 
-        /* Контейнер для применения размытия */
-      /*   .blur-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backdrop-filter: blur(10px); /* Применение размытия */
-          /*   z-index: -1; /* Чтобы задний фон был позади всего контента */
-        
+
+        }
 
         .header {
             position: relative;
             height: 200px;
-            background-color: rgba(0, 0, 0, 0); /* Полностью прозрачный фон */
+            background-image: url('backhead.png'); /* Фон можно сменить на изображение */
+            background-size: cover;
+            background-position: center;
+            /* background-color: rgb(32, 32, 32); */ /* Оставлено для возврата к цветному фону */
         }
 
         .profile {
@@ -43,7 +36,7 @@
             width: 100px;
             height: 100px;
             margin-top: -50px;
-            border: 3px solid #121212;
+            border: 0px solid #ffffff;
         }
 
         .profile h1 {
@@ -56,16 +49,7 @@
             font-size: 1.2em;
         }
 
-        .profile d {
-            margin: 2px 0;
-            font-size: 1em;
-        }
-
-        .profile dd {
-            margin: 2px 0;
-            font-size: 1em;
-        }
-        .profile a {
+        .profile d, .profile dd, .profile a {
             margin: 2px 0;
             font-size: 1em;
         }
@@ -83,7 +67,7 @@
         }
 
         .links a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 10px;
             font-size: 1.1em;
@@ -103,22 +87,13 @@
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0);
-            margin-top: 400px;
-        }
-         {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0);
-            margin-top: 400px;
+            padding:  20px;
+            background-color: rgb(32, 32, 32);
+            margin-top: 300px;
         }
     </style>
 </head>
 <body>
-
-<!-- Размытие заднего фона -->
-<!-- <div class="blur-background"></div>-->
 
 <div class="header"></div>
 
@@ -126,10 +101,9 @@
     <img src="avat.png" alt="Profile Picture">
     <h1>Wise The Archive</h1>
     <p>15 y.o. </p>
-    <d><span class="semi-transparent"><tt>he's\him</tt></d>
+    <d><span class="semi-transparent"><tt>him/his/she/her/they/their</tt></d>
     <dd><span class="semi-transparent"><tt>Maxim Kokh</tt></dd>
 </div>
-
 
 <div class="links">
     <a href="https://www.instagram.com/maksim.kkh/"><img src="instalogo.png" alt="Insta logo"><tt>(insta)Gram page</tt></a>
@@ -142,9 +116,6 @@
 <footer>
     &copy; <tt>2024 Maxim Kokh/Wise.</tt>
 </footer>
-
-</body>
-</html>
 
 </body>
 </html>
